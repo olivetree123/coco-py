@@ -23,3 +23,8 @@ route.register(HomeEndpoint, "/")
 route.register(HelloEndpoint, "/hello/{name}")
 app = Coco(route=route)
 ```
+
+## Run
+```shell
+uvicorn main:app
+```
