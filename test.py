@@ -1,4 +1,4 @@
-from coco import Resource, Route, Coco
+from paopao import Paopao, Resource, Route
 
 
 class HomeEndpoint(Resource):
@@ -20,4 +20,4 @@ route = Route()
 route.register(HomeEndpoint, "/")
 # route.register(HomeEndpoint, "/home")
 route.register(HelloEndpoint, "/hello/{name}/what")
-app = Coco(route=route)
+app = Paopao(route=route)

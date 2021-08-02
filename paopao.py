@@ -9,7 +9,7 @@ class Resource(object):
         pass
 
 
-class Coco(object):
+class Paopao(object):
     def __init__(self, route: Route = None):
         self.route = route
 

@@ -1,11 +1,11 @@
-# coco
+# paopao
 
-coco is an asynchronous web framework for python
+paopao is an asynchronous web framework for python
 
 
 ## Tutorial
 ```python
-from coco import Resource, Route, Coco
+from paopao import Paopao, Resource, Route
 
 
 class HomeEndpoint(Resource):
@@ -21,7 +21,7 @@ class HelloEndpoint(Resource):
 route = Route()
 route.register(HomeEndpoint, "/")
 route.register(HelloEndpoint, "/hello/{name}")
-app = Coco(route=route)
+app = Paopao(route=route)
 ```
 
 ## Run
